@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router'
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'duahua1.github.io'
+  public title = 'duahua1.github.io'
 }

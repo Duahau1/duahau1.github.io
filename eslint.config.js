@@ -33,6 +33,7 @@ module.exports = tseslint.config(
         },
       ],
       semi: ['error', 'never'],
+      '@typescript-eslint/explicit-member-accessibility': 'error',
     },
   },
   {

@@ -4,8 +4,8 @@
   "singleQuote": true,
   "semi": false,
   "bracketSpacing": true,
-  "arrowParents": "avoid",
+  "arrowParens": "avoid",
   "trailingComma": "es5",
-  "bracketSameLine": true,
+  "bracketSameLine": false,
   "printWidth": 80
 }
