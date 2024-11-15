@@ -3,6 +3,8 @@ const eslint = require('@eslint/js')
 const tseslint = require('typescript-eslint')
 const angular = require('angular-eslint')
 const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended')
+const stylisticEslintPlugin = require('@stylistic/eslint-plugin')
+const tsStylisticConfig = stylisticEslintPlugin.configs['recommended-flat']
 
 module.exports = tseslint.config(
   {
@@ -12,6 +14,7 @@ module.exports = tseslint.config(
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
+      tsStylisticConfig,
       eslintPluginPrettierRecommended,
     ],
     processor: angular.processInlineTemplates,
@@ -24,16 +27,35 @@ module.exports = tseslint.config(
           style: 'camelCase',
         },
       ],
+      '@angular-eslint/component-class-suffix': ['off'],
       '@angular-eslint/component-selector': [
         'error',
         {
           type: 'element',
-          prefix: 'app',
+          prefix: 'nephos',
           style: 'kebab-case',
         },
       ],
-      semi: ['error', 'never'],
       '@typescript-eslint/explicit-member-accessibility': 'error',
+      '@stylistic/member-delimiter-style': [
+        'error',
+        {
+          multiline: {
+            delimiter: 'none',
+            requireLast: true,
+          },
+          singleline: {
+            delimiter: 'semi',
+            requireLast: false,
+          },
+        },
+      ],
+      '@stylistic/quote-props': ['error', 'as-needed'],
+      '@stylistic/no-extra-semi': ['error'],
+      '@stylistic/object-curly-spacing': ['off'],
+      '@stylistic/operator-linebreak': ['error', 'after'],
+      '@stylistic/comma-dangle': ['off'],
+      '@stylistic/quotes': ['off'],
     },
   },
   {

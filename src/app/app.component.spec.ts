@@ -14,7 +14,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy()
   })
 
-  it(`should have the 'duahua1.github.io' title`, () => {
+  it("should have the 'duahua1.github.io' title", () => {
     const fixture = TestBed.createComponent(AppComponent)
     const app = fixture.componentInstance
     expect(app.title).toEqual('duahua1.github.io')
