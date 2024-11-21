@@ -1,1 +1,2 @@
-<p>side-nav works!</p>
+
+<span *ngFor="let route of routeConfig" class="nav-btn" [routerLink]="route.routerLink" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">{{route.name}}</span>

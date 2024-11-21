@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { NephosNav } from './side-nav'
+import { HomePage } from './home.component'
 
-describe('SideNavComponent', () => {
-  let component: NephosNav
-  let fixture: ComponentFixture<NephosNav>
+describe('HomeComponent', () => {
+  let component: HomePage
+  let fixture: ComponentFixture<HomePage>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NephosNav],
+      imports: [HomePage],
     }).compileComponents()
 
-    fixture = TestBed.createComponent(NephosNav)
+    fixture = TestBed.createComponent(HomePage)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

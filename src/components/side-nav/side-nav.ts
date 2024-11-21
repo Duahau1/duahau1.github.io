@@ -1,11 +1,15 @@
-import { Component } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { Component, Input } from '@angular/core'
+import { RouterModule } from '@angular/router'
+import { RouteConfigType } from './side-nav.model'
 
 @Component({
   selector: 'nephos-nav',
   standalone: true,
-  imports: [],
+  imports: [RouterModule, CommonModule],
   templateUrl: './side-nav.html',
+  styleUrls: ['side-nav.scss'],
 })
-export class NephosSideNav {
-  public x = 10
+export class NephosNav {
+  @Input() public routeConfig: RouteConfigType[] = []
 }

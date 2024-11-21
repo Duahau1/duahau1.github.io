@@ -56,6 +56,7 @@ module.exports = tseslint.config(
       '@stylistic/operator-linebreak': ['error', 'after'],
       '@stylistic/comma-dangle': ['off'],
       '@stylistic/quotes': ['off'],
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     },
   },
   {

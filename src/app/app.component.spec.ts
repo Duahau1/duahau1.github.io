@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy()
   })
 
-  it("should have the 'duahua1.github.io' title", () => {
+  it("should have the 'duahau1.github.io' title", () => {
     const fixture = TestBed.createComponent(AppComponent)
     const app = fixture.componentInstance
-    expect(app.title).toEqual('duahua1.github.io')
+    expect(app.title).toEqual('duahau1.github.io')
   })
 
   it('should render title', () => {
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
     fixture.detectChanges()
     const compiled = fixture.nativeElement as HTMLElement
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Hello, duahua1.github.io'
+      'Hello, duahau1.github.io'
     )
   })
 })

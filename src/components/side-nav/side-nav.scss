@@ -1,0 +1,27 @@
+:host{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+
+  .nav-btn {
+    writing-mode: vertical-lr;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    transform: rotate(-180deg);
+
+    &.active::before {
+      position: absolute;
+      display: block;
+      border: 2px solid black;
+      left:-2px;
+      content: '';
+      height: 50%;
+
+    }
+  }
+}
