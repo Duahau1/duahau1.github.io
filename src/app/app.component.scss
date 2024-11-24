@@ -1,0 +1,7 @@
+@import '../styles/mixins';
+
+:host {
+  display: block;
+  background-color: var(--primary-color);
+
+}

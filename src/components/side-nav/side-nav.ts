@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common'
 import { Component, Input } from '@angular/core'
 import { RouterModule } from '@angular/router'
-import { RouteConfigType } from './side-nav.model'
+import { RouteConfigType } from '../../app/app.model'
 
 @Component({
   selector: 'nephos-nav',

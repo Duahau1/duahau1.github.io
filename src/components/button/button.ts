@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component, HostListener } from '@angular/core'
+import { ThemeService } from '../../services/theme.service'
 
 @Component({
   selector: 'nephos-button',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core'
   templateUrl: './button.html',
 })
 export class NephosButton {
-  public x = 20
+  @HostListener('click')
+  public onClickHandler() {
+    const selectedTheme =
+      this.themeService.getTheme() === 'green' ? 'light' : 'green'
+    this.themeService.setTheme(selectedTheme)
+  }
+
+  constructor(public themeService: ThemeService) {}
 }

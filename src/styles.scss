@@ -1,7 +1,10 @@
 @import '../node_modules/normalize.css/normalize.css';
+@import './styles/green-theme';
+@import './styles/light-theme';
 
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
