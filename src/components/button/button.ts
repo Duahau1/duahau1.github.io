@@ -6,6 +6,7 @@ import { ThemeService } from '../../services/theme.service'
   standalone: true,
   imports: [],
   templateUrl: './button.html',
+  styleUrl: './button.scss',
 })
 export class NephosButton {
   @HostListener('click')
