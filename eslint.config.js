@@ -73,6 +73,13 @@ module.exports = tseslint.config(
       ...angular.configs.templateRecommended,
       ...angular.configs.templateAccessibility,
     ],
-    rules: {},
+    rules: {
+      '@angular-eslint/template/eqeqeq': [
+        'error',
+        {
+          allowNullOrUndefined: true,
+        },
+      ],
+    },
   }
 )

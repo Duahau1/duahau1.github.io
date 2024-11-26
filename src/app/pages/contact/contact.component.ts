@@ -1,9 +1,10 @@
 import { Component } from '@angular/core'
+import { NephosPageModule } from '../../../components/page/page.module'
 
 @Component({
   selector: 'nephos-contact',
   standalone: true,
-  imports: [],
+  imports: [NephosPageModule],
   templateUrl: './contact.component.html',
 })
 export class ContactPage {

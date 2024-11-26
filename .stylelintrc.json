@@ -5,6 +5,7 @@
     "at-rule-no-unknown": null,
     "number-max-precision":null,
     "scss/no-global-function-names":null,
-    "scss/at-if-no-null": null
+    "scss/at-if-no-null": null,
+    "selector-pseudo-element-no-unknown":null
   }
 }

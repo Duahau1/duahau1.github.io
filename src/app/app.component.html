@@ -1,4 +1,4 @@
-<div class="nephos-title">vngg.</div>
+<div class="nephos-title" [ngClass]="{'__hidden':isHomePage()}">vngg.</div>
 <nephos-nav [routeConfig]="routeConfigs"></nephos-nav>
 <div class="nephos-main-content">
   <router-outlet></router-outlet>
