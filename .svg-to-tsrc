@@ -1,0 +1,11 @@
+{
+  "srcFiles": ["./src/components/icons/svg/*.svg"],
+  "outputDirectory": "./src/components/icons",
+  "interfaceName": "NephosIcon",
+  "prefix": "nephos",
+  "fileName": "nephos-icon.model",
+  "svgoConfig": {
+    "plugins": ["cleanupAttrs"]
+  },
+  "compileSources": true
+}

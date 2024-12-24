@@ -4,14 +4,14 @@ import { Position } from '../../app/app.model'
 @Component({
   selector: 'nephos-page-header',
   standalone: false,
-  template: '<ng-content></ng-content>',
+  template: '<span><ng-content></ng-content></span>',
   styles: [':host {width:100%; height :100%;}'],
 })
 export class NephosPageHeader {}
 @Component({
   selector: 'nephos-page-content',
   standalone: false,
-  template: '<ng-content></ng-content>',
+  template: '<span><ng-content></ng-content></span>',
   styles: [':host {width:100%; height :100%;}'],
 })
 export class NephosPageContent {}
@@ -34,6 +34,9 @@ export class NephosPage {
     if (this.alignment == null) {
       return ''
     }
-    return _.map(this.alignment, value => `${value}-alignment-header`).join()
+    return _.map(
+      this.alignment,
+      (value, key) => `${_.kebabCase(key)}-${value}-alignment-header`
+    ).join(' ')
   }
 }

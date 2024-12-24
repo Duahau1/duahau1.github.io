@@ -6,6 +6,7 @@
     "number-max-precision":null,
     "scss/no-global-function-names":null,
     "scss/at-if-no-null": null,
-    "selector-pseudo-element-no-unknown":null
+    "selector-pseudo-element-no-unknown":null,
+    "selector-class-pattern": null
   }
 }

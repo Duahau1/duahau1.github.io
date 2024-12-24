@@ -23,7 +23,7 @@ module.exports = tseslint.config(
         'error',
         {
           type: 'attribute',
-          prefix: 'app',
+          prefix: 'nephos',
           style: 'camelCase',
         },
       ],
@@ -65,6 +65,7 @@ module.exports = tseslint.config(
       '@stylistic/comma-dangle': ['off'],
       '@stylistic/quotes': ['off'],
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      '@stylistic/no-multiple-empty-lines': ['error', { max: 2 }],
     },
   },
   {

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { NephosPageModule } from '../../../components/page/page.module'
+import { Position } from '../../app.model'
 
 @Component({
   selector: 'nephos-contact',
@@ -8,5 +9,8 @@ import { NephosPageModule } from '../../../components/page/page.module'
   templateUrl: './contact.component.html',
 })
 export class ContactPage {
-  public x = 10
+  public alignmentOptions: Position = {
+    xPosition: 'center',
+    yPosition: 'center',
+  }
 }

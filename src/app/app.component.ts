@@ -1,6 +1,6 @@
 import { CommonModule, NgClass } from '@angular/common'
 import { Component, HostBinding } from '@angular/core'
-import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router'
+import { Router, RouterModule, RouterOutlet } from '@angular/router'
 import { NephosButton } from '../components/button/button'
 import { NephosNav } from '../components/side-nav/side-nav'
 import { ThemeService } from '../services/theme.service'
@@ -28,14 +28,11 @@ export class AppComponent {
 
   constructor(
     public themeService: ThemeService,
-    public activatedRoute: ActivatedRoute
-  ) {
-    //  this.activatedRoute.url.pipe(tap(console.log)).subscribe()
-  }
+    public router: Router
+  ) {}
 
   public isHomePage(): boolean {
-    //  console.log(this.activatedRoute.snapshot)
-    return false
+    return this.router.url !== '/'
   }
 
   public title = 'duahau1.github.io'

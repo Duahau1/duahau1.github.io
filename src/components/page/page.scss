@@ -1,9 +1,50 @@
-:host::ng-deep{
+
+
+::ng-deep{
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   nephos-page-header {
-    font-weight: 900 ;
+    font-weight: 900;
     font-size: 32px;
+    display: flex;
+    position: relative;
+    height: fit-content;
+
+    > span{
+      position: relative;
+    }
+
+    &>span::after{
+      position: absolute;
+      content: '';
+      border-bottom: 8px solid var(--accent-contrast-color);
+      width: 50%;
+      left: 25%;
+      display: block;
+
+    }
   }
+
+&.x-position-center-alignment-header{
+    nephos-page-header {
+      justify-content: center;
+    }
+  }
+
+&.y-position-top-alignment-header{
+    nephos-page-header {
+      align-items: start;
+    }
+  }
+
+&.y-position-center-alignment-header{
+    nephos-page-header {
+      align-items: center;
+    }
+  }
+
+
 }
